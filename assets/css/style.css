@@ -16,7 +16,8 @@
 
   /* COLOR */
   --color-white: #ffff;
-  --color-primary: #d22f90;
+  --color-white-transparent: rgba(255,255,255,.25);
+  --color-primary: #c48fba;
   --color-text: #0d1730;
 
   /* MISC */
@@ -47,6 +48,14 @@ html {
 body {
   font-family: var(--font-main);
   font-size: var(--text-base);
+  padding-top: 50px;
+  height: 100vh;
+}
+
+@media screen and (min-width:744px) {
+  body {
+    padding-top: 70px;
+  }
 }
 
 h1,
@@ -61,7 +70,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   display: block;
 }
@@ -72,6 +81,22 @@ ul {
   list-style: none;
 }
 
+/* GENERIC */
+h1 {
+  font-size: var(--text-lg);
+  color: var(--color-primary);
+  font-weight: var(--font-bold);
+}
+
+h2 {
+  font-size: var(--text-md);
+  font-weight: var(--font-semi-bold);
+}
+
+p {
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+}
 /* UTILITY */
 .container {
   width: 90%;
@@ -82,6 +107,9 @@ ul {
 .container-flex {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .header-flex {
@@ -93,9 +121,14 @@ ul {
 /* HEADER */
 header {
   font-size: var(--text-base);
-  background-color: var(--color-white);
+  background-color: var(--color-white-transparent);
   box-shadow: 0 3px 4px rgba(193, 205, 216, 0.15);
   padding: var(--padding-header);
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+
 }
 
 /* NAVIGATION LIST AND LINKS */
@@ -188,6 +221,7 @@ header {
 
   #active-link {
     position: relative; 
+    background: none;
   }
 
   #active-link::after {
@@ -201,3 +235,55 @@ header {
     background-color: #0d1730; 
   }
 }
+
+/* HOME */
+.main__h2{
+  position: relative;
+}
+
+.typing::before {
+  content: 'Programmer';
+  animation: roles 20s infinite;
+  color: var(--color-text);
+}
+
+.typing::after {
+  content: "";
+
+    position: absolute;
+
+    height: 100%;
+    
+    border-left: 3px solid white;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+  to{
+      border-left: 3px solid var(--color-text);
+  }
+}
+
+
+
+@keyframes roles {
+  0%, 20% {
+    content: 'Student';
+  }
+  21%, 40% {
+    content: 'Aspiring Developer';
+  }
+  41%, 60% {
+    content: 'Aspiring Web Developer';
+  }
+
+  60%, 80% {
+    content: 'Learning Enthusiast';
+  }
+
+  81%, 100% {
+    content: 'Future Engineer';
+  }
+}
+
