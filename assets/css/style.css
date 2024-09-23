@@ -4,26 +4,24 @@
 
 :root {
   /* Typography */
-  --text-sm : 0.875rem;
+  --text-sm: 0.875rem;
   --text-base: 1rem;
-  --text-md : 1.5rem;
-  --text-lg : 2rem; 
-  --font-bold : 700;
-  --font-semi-bold : 600;
-  --font-medium : 500;
-  --font-normal : 400; 
-  --font-main : 'Poppins', sans-serif;
+  --text-md: 1.5rem;
+  --text-lg: 2rem;
+  --font-bold: 700;
+  --font-semi-bold: 600;
+  --font-medium: 500;
+  --font-normal: 400;
+  --font-main: "Poppins", sans-serif;
 
   /* COLOR */
   --color-white: #ffff;
-  --color-primary: #D22F90;
-  --color-text: #0D1730;
+  --color-primary: #d22f90;
+  --color-text: #0d1730;
 
   /* MISC */
-  --padding-header: .625em 0;
-  --padding-base : .5em .75em;
-  
-  
+  --padding-header: 0.625em 0;
+  --padding-base: 0.5em 0.75em;
 }
 
 /* BASE */
@@ -100,6 +98,7 @@ header {
   padding: var(--padding-header);
 }
 
+/* NAVIGATION LIST AND LINKS */
 .header__logo {
   font-weight: var(--font-bold);
 }
@@ -108,31 +107,52 @@ header {
   font-weight: var(--font-normal);
   font-size: var(--text-sm);
   color: var(--color-white);
+  display: block;
+}
 
+.header__nav-list a:hover {
+  color: var(--color-text);
+  background-color: #ffff;
+}
+
+.header__nav label {
+  cursor: pointer;
+}
+
+#active-link {
+  background-color: var(--color-white);
+  color: var(--color-text);
+  cursor: default;
 }
 
 .header ul {
-  position: fixed;
-  top: 0;
-  bottom: 0;
   right: -100%;
-  z-index: 20;
-  background-color: var(--color-text);
-  opacity: .95;
-  line-height: 3em;
-  padding: .5em 3em;
-  text-align: center;
-  transition: all .65s ease-out;
+  position: fixed;
 }
 
 .header__nav-list a {
   color: var(--color-white);
+  transition: color 0.15s, background-color 0.15s;
+}
+
+/* SIDEBAR */
+.header ul {
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  background-color: var(--color-text);
+  opacity: 0.95;
+  line-height: 3em;
+  width: 50%;
+  text-align: center;
 }
 
 #sidebar-active {
   display: none;
 }
+
 #sidebar-active:checked ~ ul {
+  transition: right 0.75s ease-out;
   right: 0;
 }
 
@@ -144,4 +164,40 @@ header {
   left: 0;
   right: 0;
   z-index: 15;
+}
+
+@media screen and (min-width: 744px) {
+  .header ul {
+    position: relative;
+    z-index: 0;
+    background: none;
+    opacity: 1;
+    padding: 0;
+    transition: all 0s;
+    display: flex;
+    gap: 1em;
+    right: 0;
+  }
+  .header__nav-list a {
+    color: var(--color-text);
+  }
+
+  .header label {
+    display: none;
+  }
+
+  #active-link {
+    position: relative; 
+  }
+
+  #active-link::after {
+    content: ''; 
+    display: block; 
+    position: absolute;
+    bottom: 12px; 
+    left: 0; 
+    width: 100%; 
+    height: .5px;
+    background-color: #0d1730; 
+  }
 }
