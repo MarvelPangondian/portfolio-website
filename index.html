@@ -47,20 +47,20 @@
             </label>
 
             <li class="header__nav-list">
-              <a href="index.html" id="active-link">Home</a>
+              <a href="#home">Home</a>
             </li>
-            <li class="header__nav-list"><a href="about.html">About</a></li>
+            <li class="header__nav-list"><a href="#about">About</a></li>
             <li class="header__nav-list">
-              <a href="projects.html">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
-            <li class="header__nav-list"><a href="contact.html">Contact</a></li>
+            <li class="header__nav-list"><a href="#Contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main style="height: 100%">
-      <section class="home container container-flex mb-section">
+      <section class="home section container container-flex" id="home">
         <img
           src="/assets/img/profile4.svg"
           alt="Creator profile image"
@@ -124,29 +124,31 @@
         </div>
       </section>
 
-      <section class="about container grid">
+      <section class="about section container grid" id="about">
         <h2 class="section__title">About Me</h2>
-        
-        <div class="about-flex">
 
+        <div class="about__container">
+          <img
+            src="assets/img/aboutMe2.svg"
+            alt="About Me svg"
+            class="about__profile mb-base"
+          />
+          <div class="about__content">
+            <h3 class="section__subtitle">
+              You can call me <span>Marvel</span>!
+            </h3>
+            <p class="about__content-text">
+              Hi! I'm a student at the Bandung Institute of Technology,
+              currently pursuing a degree in Informatics Engineering. I'm currently on my journey
+              to be proficient software engineer and web developer.
+            </p>
+          </div>
         </div>
-        <img
-        src="assets/img/aboutMe2.svg"
-        alt="About Me svg"
-        class="about__profile mb-base"
-      />
-        <div class="about__content">
-          <h3 class="section__subtitle">
-            You can call me <span>Marvel</span>!
-          </h3>
-          <p class="about__content">
-            Hi! I'm a student at the Bandung Institute of Technology, currently
-            pursuing a degree in Informatics Engineering
-          </p>
-        </div>
-
       </section>
 
+      <section class="projects section container grid" id="projects">
+        <h2 class="section__title">Projects</h2>
+      </section>
     </main>
   </body>
 </html>
