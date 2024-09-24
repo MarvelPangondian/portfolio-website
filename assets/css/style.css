@@ -17,7 +17,7 @@
   /* COLOR */
   --color-white: #ffff;
   --color-white-transparent: rgba(255,255,255,.25);
-  --color-primary: #c48fba;
+  --color-primary: #D22F90;
   --color-text: #0d1730;
 
   /* MISC */
@@ -49,12 +49,14 @@ body {
   font-family: var(--font-main);
   font-size: var(--text-base);
   padding-top: 50px;
+  padding-bottom: 30px;
   height: 100vh;
 }
 
 @media screen and (min-width:744px) {
   body {
     padding-top: 70px;
+    padding-bottom: 30px;
   }
 }
 
@@ -146,6 +148,7 @@ header {
 /* NAVIGATION LIST AND LINKS */
 .header__logo {
   font-weight: var(--font-bold);
+  color: var(--color-primary);
 }
 
 .header__nav-list a {
