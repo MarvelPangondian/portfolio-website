@@ -17,7 +17,8 @@
   /* COLOR */
   --color-white: #ffff;
   --color-white-transparent: rgba(255, 255, 255, 0.25);
-  --color-primary: #d22f90;
+  --color-primary: #06b6d4;
+  --color-secondary:#5eead4;
   --color-text: #0d1730;
 
   /* MISC */
@@ -487,6 +488,26 @@ header {
 }
 
 /* PROJECTS */
-.projects__img {
-  
+
+
+/* CONTACT */
+.contact input,.contact form, .contact textarea {
+
+  display: block;
+  width: 100%;
+  font-size: var(--text-sm);
+  font-family: var(--font-main);
+  margin-bottom: 2em;
+  padding: .5em 1em;
+
+}
+
+.contact input, .contact textarea {
+  border: var(--color-primary) solid 1px;
+  border-radius: 5px;
+}
+
+
+.contact textarea {
+
 }
