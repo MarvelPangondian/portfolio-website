@@ -228,23 +228,25 @@
         </a>
       </div>
     </section>
-    
+
     <section class="contact section container container-flex-2" id="contact">
       <p class="section__title-sub">If you need anything</p>
       <h2 class="section__title">Contact Me</h2>
 
       <div class="contact__container" style="width: 100%;">
-        <form target="_blank" action="https://formsubmit.co/el/hilutu" method="POST" class="login-form" style="width: 100%;">
+        <form action="https://formspree.io/f/xkgwlldw" method="POST" class="login-form" style="width: 100%;">
           <input type="text" id="name" name="name" placeholder="Enter name.." />
           <input type="email" id="email" name="email" placeholder="Enter email.." />
 
-          <textarea name="message" id="message" rows="10" placeholder="Enter message"></textarea>
-        
+          <textarea name="message" id="message" rows="10" name="message" placeholder="Enter message"
+            required></textarea>
+
           <div class="submit-container">
-            <button type="submit" value="Submit" class="button" style="display: inline-block; width: 100%; cursor: pointer;">Send</button>
+            <button type="submit" value="Submit" class="button"
+              style="display: inline-block; width: 100%; cursor: pointer;">Send</button>
           </div>
         </form>
-        
+
       </div>
     </section>
   </main>
