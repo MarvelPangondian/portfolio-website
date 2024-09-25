@@ -487,9 +487,49 @@ header {
   align-items: center;
 }
 
+.skills__container {
+  display: grid;
+  text-align: start;
+  line-height: 2em;
+  width: 100%;
+  gap: 1em;
+}
+
+@media screen and (min-width:744px) {
+  .skills__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.skill__container-list {
+  border: #0d1730 solid 1px;
+  padding: 2em;
+  border-radius: 10px;
+}
+
 /* PROJECTS */
 
+.projects__container {
+  display: grid;
+  align-content: center;
+  align-items: center; /* Centers content vertically */
+  row-gap: 2rem;
+}
 
+@media screen and (min-width:744px) {
+  .projects__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.projects__container img {
+  max-width: 100%;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(5, 58, 78, 0.15);
+
+  border-radius: .5rem;
+}
 /* CONTACT */
 .contact input,.contact form, .contact textarea {
 
@@ -505,9 +545,10 @@ header {
 .contact input, .contact textarea {
   border: var(--color-primary) solid 1px;
   border-radius: 5px;
+
 }
 
 
 .contact textarea {
-
+  
 }
