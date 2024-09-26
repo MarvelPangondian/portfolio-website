@@ -1,8 +1,8 @@
 # Portfolio Website
-> A simple portfolio website using HTML and CSS.
+> A simple portfolio website built using HTML and CSS.
 
 ## Table of Contents
-* [General Info](#general-information)
+* [General Information](#general-information)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Screenshots](#screenshots)
@@ -11,53 +11,52 @@
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Contact](#contact)
-<!-- * [License](#license) -->
-
 
 ## General Information
-- Portfolio Website using both HTML and CSS
-- Uses semantic HTML
-- Website is responsive
-- Simple and creative use of colors and typography
-- Interactive Design
-- Accessible Website
-- Optimized Performance
+- This is a personal portfolio website showcasing projects and skills using HTML and CSS.
+- The website utilizes semantic HTML elements for better structure and accessibility.
+- It features a responsive design, ensuring optimal viewing across various devices.
+- Creative use of colors and typography enhances the visual appeal.
+- Interactive elements provide a dynamic user experience.
+- Accessibility improvements ensure the website is usable for all visitors.
+- Performance optimizations contribute to faster load times.
 
 ## Technologies Used
 - HTML
 - CSS
 
 ## Features
-List the ready features here:
-- Responsive Design
-- Interactive Design
-- Optimized for both mobile and desktop
-
+- **Responsive Design:** The website is optimized for both desktop and mobile devices.
+- **Interactive Elements:** Engaging and user-friendly design.
+- **Performance Optimization:** Faster load times for a smooth user experience.
 
 ## Screenshots
 ![Desktop view](./screenshots/Desktop.png)<br><br>
-![Tablet view](./screenshots/Tablet.png)
-![Phone view](./screenshots/Phone.png)
-
+![Tablet view](./screenshots/Tablet.png)<br><br>
+![Phone view](./screenshots/Phone.png)<br><br>
+![Desktop Lighthouse](./screenshots/dekstopLighthouse.png)<br><br>
+![Mobile Lighthouse](./screenshots/mobileLighthouse.png)
 
 ## Setup
-- Clone Repository
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MarvelPangondian/portfolio-website
+   ```
 
-  ```
-  git clone https://github.com/MarvelPangondian/portfolio-website
-  ```
-- Download Live Server in VScode
+2. Install the Live Server extension in VS Code.
 
 ## Usage
-- View website using Live Server in Vscode
+- Open the project folder in VS Code.
+- Start Live Server to view the website locally.
+
 ## Project Status
-Project is:  _open for future modifications_ . 
+The project is currently _open for future modifications_.
 
 
 ## Room for Improvement
 
 Room for improvement:
-- Increase Accessibility
+- Further improvements can be made to enhance accessibility features.
 
 
 ## Contact
