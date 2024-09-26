@@ -57,6 +57,15 @@
   }
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #007BFF;
+  outline-offset: 2px;
+  background-color: #f0f8ff;
+}
+
 /* BASE */
 * {
   margin: 0;
@@ -96,8 +105,6 @@ a {
   color: var(--color-text);
 }
 
-
-
 img {
   max-width: 100%;
   width: 80%;
@@ -109,6 +116,17 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+/* Makes browser surfing much easier*/
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+.section:focus-visible {
+  outline: 2px solid #007BFF; 
+  outline-offset: 2px; 
+  background-color: #f0f8ff; 
 }
 
 @media screen and (min-width: 744px) {
