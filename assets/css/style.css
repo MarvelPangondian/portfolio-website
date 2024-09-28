@@ -80,7 +80,6 @@ html {
 body {
   font-family: var(--font-main);
   font-size: var(--text-base);
-  padding-bottom: 30px;
   padding-top: 6rem;
   height: 100%;
 }
@@ -622,4 +621,22 @@ header {
 .contact textarea {
   border: var(--color-primary) solid 1px;
   border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  color: var(--color-white);
+  padding: 2em;
+  background-color: var(--color-primary);
+}
+.footer__text {
+  font-size: var(--text-sm);
+  font-weight: var(--font-semi-bold);
+}
+
+@media screen and (min-width:744px) {
+  footer {
+    padding: 3em;
+  }
 }
