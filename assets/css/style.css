@@ -20,6 +20,7 @@
   --color-primary: #06b6d4;
   --color-secondary: #5eead4;
   --color-text: #0d1730;
+  --color-bg : #f8fafc;
 
   /* MISC */
   --padding-header: 0.625em 0;
@@ -75,6 +76,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--color-bg);
 }
 
 body {

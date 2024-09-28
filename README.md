@@ -34,7 +34,7 @@
 ![Desktop view](./screenshots/Desktop.png)<br><br>
 ![Tablet view](./screenshots/Tablet.png)<br><br>
 ![Phone view](./screenshots/Phone.png)<br><br>
-![Desktop Lighthouse](./screenshots/dekstopLighthouse.png)<br><br>
+![Desktop Lighthouse](./screenshots/desktopLighthouse.png)<br><br>
 ![Mobile Lighthouse](./screenshots/mobileLighthouse.png)
 
 ## Setup
